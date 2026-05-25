@@ -1,6 +1,6 @@
 # Mini-LMS Video Tracker
 
-This is a MERN stack (MongoDB, Express, React, Node.js) application that simulates a video-based Learning Management System (LMS). It features a course list with search, a YouTube-style video player and playlist layout, global progress tracking, and optimistic UI updates for marking modules as complete.
+This is a MERN stack (MongoDB, Express, React, Node.js) application that simulates a video-based Learning Management System (LMS). It features a course list with search, a video player and playlist layout, global progress tracking, and optimistic UI updates for marking modules as complete.
 
 ## Prerequisites
 
