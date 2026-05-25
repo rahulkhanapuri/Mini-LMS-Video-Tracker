@@ -17,31 +17,31 @@ const seedDatabase = async () => {
     const module1 = new Module({
       title: 'Introduction to React',
       description: 'Learn the basics of React, components, and JSX.',
-      videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+      videoUrl: 'https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4'
     });
 
     const module2 = new Module({
       title: 'State and Props',
       description: 'Understanding data flow in React applications.',
-      videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4'
+      videoUrl: 'https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4'
     });
 
     const module3 = new Module({
       title: 'React Hooks',
       description: 'Deep dive into useState, useEffect, and custom hooks.',
-      videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4'
+      videoUrl: 'https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4'
     });
 
     const module4 = new Module({
       title: 'Context API',
       description: 'Managing global state without prop drilling.',
-      videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4'
+      videoUrl: 'https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4'
     });
 
     const module5 = new Module({
-      title: 'React Router',
-      description: 'Adding navigation to your Single Page Application.',
-      videoUrl: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4'
+      title: "React Router",
+      description: "Adding navigation to your Single Page Application.",
+      videoUrl:"https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4",
     });
 
     const savedModules = await Promise.all([

@@ -22,7 +22,8 @@ const LoginPage = () => {
   return (
     <div className="login-container">
       <div className="login-card">
-        <h2 className="login-title">Mini-LMS Login</h2>
+        <h2 className="login-title">E-Learning Platform</h2>
+        <h2 style={{ textAlign: 'center', fontWeight: 600 }}>Login</h2>
         <form onSubmit={handleLogin}>
           {error && <div className="error-text">{error}</div>}
           <div className="form-group">

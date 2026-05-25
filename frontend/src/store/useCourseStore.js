@@ -35,20 +35,21 @@ const useCourseStore = create((set, get) => ({
   fetchCourseData: async (courseId, userId) => {
     set({ isFetchingPlayer: true, playerError: null });
     try {
-      // Fetch full course details
+
       const courseDetailsRes = await axios.get(`${API_BASE_URL}/courses/${courseId}`);
       const courseData = courseDetailsRes.data;
       
-      // Fetch user progress
+      
       const progressRes = await axios.get(`${API_BASE_URL}/progress/${userId}/${courseId}`);
       const completedIds = progressRes.data.completedModules || [];
 
-      // Determine active module
+
       let currentActiveModule = courseData.modules[0];
       if (courseData.modules && courseData.modules.length > 0) {
         const firstUncompleted = courseData.modules.find(
           m => !completedIds.includes(m._id)
         );
+        
         currentActiveModule = firstUncompleted || courseData.modules[0];
       }
 

@@ -19,10 +19,11 @@ const VideoPlayer = ({ activeModule, isCompleted, onMarkComplete }) => {
     );
   }
 
+  console.log("activeModule.videoUrl",activeModule.videoUrl);
   return (
     <div className="video-area">
       <div className="video-container">
-        <video ref={videoRef} controls controlsList="nodownload" poster=''>
+        <video ref={videoRef} controls controlsList="nodownload">
           {/* Reverting to dynamic videoUrl from the database instead of hardcoded video1 */}
           <source src={activeModule.videoUrl} type="video/mp4" />
           Your browser does not support the video tag.
